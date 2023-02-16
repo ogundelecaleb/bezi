@@ -2,9 +2,11 @@
 import React from "react";
 import { useState } from "react";
 import { expand_more, beziLogo, hamburgerMenu, close } from "../assets";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const handleClose = () => setToggle(!toggle);
   const handleClick = () => setToggle(!toggle);
   return (
     <header className="w-full h-[60px] bg-custom-green-500 md:sticky md:top-0 md:z-20 ">
@@ -13,21 +15,47 @@ const Navbar = () => {
 
         <div className="hidden md:flex items-center ">
           <ul className="flex flex-row items-center gap-[24px] text-white">
-            <li className="flex gap-2 cursor-pointer items-center">
-              <h3>About Us</h3>
-              <img src={expand_more} alt="expand_more button" />
+            <li>
+              <Link className="flex gap-2 cursor-pointer items-center" to="/">
+                <h3>Home</h3>
+                <img src={expand_more} alt="expand_more button" />
+              </Link>
             </li>
-            <li className="flex gap-2 cursor-pointer items-center">
-              <h3>Porfolio</h3>
-              <img src={expand_more} alt="expand_more button" />
+            <li>
+              <Link
+                className="flex gap-2 cursor-pointer items-center"
+                to="/aboutUs"
+              >
+                <h3>About Us</h3>
+                <img src={expand_more} alt="expand_more button" />
+              </Link>
             </li>
-            <li className="flex gap-2 cursor-pointer items-center">
-              <h3>Resources</h3>
-              <img src={expand_more} alt="expand_more button" />
+            <li>
+              <Link
+                className="flex gap-2 cursor-pointer items-center"
+                to="/portfolio"
+              >
+                <h3>Porfolio</h3>
+                <img src={expand_more} alt="expand_more button" />
+              </Link>
             </li>
-            <li className="flex gap-2 cursor-pointer items-center">
-              <h3>Community</h3>
-              <img src={expand_more} alt="expand_more button" />
+            <li>
+              <Link
+                className="flex gap-2 cursor-pointer items-center"
+                to="/resource"
+              >
+                <h3>Resources</h3>
+                <img src={expand_more} alt="expand_more button" />
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="flex gap-2 cursor-pointer items-center"
+                to="/community"
+              >
+                <h3>Community</h3>
+                <img src={expand_more} alt="expand_more button" />
+              </Link>
             </li>
           </ul>
         </div>
@@ -53,14 +81,56 @@ const Navbar = () => {
             : "hidden"
         }
       >
+        
         <ul>
-          <li className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer">About Us</li>
-          <li className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer">Porfolio</li>
-          <li className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer">Resources</li>
-          <li className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer">Resources</li>
-          <li className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer">Community</li>
+          <Link to="/">
+            {" "}
+            <li
+              onClick={handleClose}
+              className="p-4 hover:bg-[#006774]  hover:rounded-lg hover:text-white cursor-pointer"
+            >
+              Home
+            </li>
+          </Link>
+          <Link to="/aboutUs">
+            <li
+              onClick={handleClose}
+              className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer"
+            >
+              About Us
+            </li>
+          </Link>
+          <Link to="/portfolio">
+            {" "}
+            <li
+              onClick={handleClose}
+              className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer"
+            >
+              Porfolio
+            </li>
+          </Link>
+          <Link to="/resource">
+            {" "}
+            <li
+              onClick={handleClose}
+              className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer"
+            >
+              Resources
+            </li>
+          </Link>
+          <Link to="/community">
+            <li
+              onClick={handleClose}
+              className="p-4 hover:bg-[#006774] hover:rounded-lg hover:text-white cursor-pointer"
+            >
+              Community
+            </li>
+          </Link>
           <div className="flex flex-col my-4 gap-4">
-            <button className="px-8 py-5 rounded-md bg-[#006774] text-white font-bold">
+            <button
+              onClick={handleClose}
+              className="px-8 py-5 rounded-md bg-[#006774] text-white font-bold"
+            >
               Join Bezi
             </button>
           </div>

@@ -25,6 +25,7 @@ module.exports = {
       "colors": colors,
       backgroundImage: {
         'hero': "url('./assets/largeLogo.svg')",
+        'aboutUs': "url('./assets/backgroundImage2.svg')",
       },
     },
   },

@@ -27,9 +27,29 @@ import schedule from "./schedule.png";
 import user from "./user.png";
 import instagram from "./instagram.png";
 import linkedin from "./linkedin.png";
+import Artboard from "./Artboard.png";
+import backgroundImage2 from "./backgroundImage2.svg";
+import Team1 from "./Team1.png";
+import Team2 from "./Team2.png";
+import Team3 from "./Team3.png";
+import SideNav from "./SideNav.png";
+import SideNav2 from "./SideNav2.png";
+import InstagramBlur from "./InstagramBlur.png";
+import LinkedinBlur from "./LinkedinBlur.png";
+import TwitterBlur from "./TwitterBlur.png";
 
 export {
+  Artboard,
+  backgroundImage2,
   Ellipse,
+  Team1,
+  Team2,
+  Team3,
+  SideNav,
+  SideNav2,
+  TwitterBlur,
+  LinkedinBlur,
+  InstagramBlur,
   hamburgerMenu,
   Logos_Olist,
   close,

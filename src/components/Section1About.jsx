@@ -3,7 +3,7 @@ import { Artboard, ladyImage } from "../assets";
 
 const Section1About = () => {
   return (
-    <div className=" px-4  mb-[40px] md-[80px] md:w-[850px] md:py-[50px] mx-auto  items-center gap-4 ">
+    <div className=" px-4  mb-[40px] md:w-[850px] md:py-[50px] mx-auto  items-center gap-4 ">
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div>
           <h3 className="text-[25px] md:text-[25px] text-[#006774] md:text-[#006774] font-bold">

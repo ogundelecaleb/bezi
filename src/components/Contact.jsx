@@ -12,7 +12,7 @@ const Contact = () => {
           opportunities, and events.
         </p>
         <div className="flex flex-row gap-4 items-center">
-          <input type="text" placeholder="youremail@yahoo.com" className="placeholder:text-sm rounded-xl px-3 py-1 border border-[#918F8F] bg-transparent max-w-[420px] "/>
+          <input type="text" placeholder="youremail@yahoo.com" className="placeholder:text-sm rounded-xl px-3 py-1 border border-[#918F8F] bg-transparent max-w-[380px] "/>
           <button className="px-[2] md:px-3 py-1 rounded-md bg-[#006774] text-white text-xs md:text-sm">Sign Me Up</button>
         </div>
       </div>

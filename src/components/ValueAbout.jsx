@@ -5,11 +5,11 @@ import {
   AccordionHeader,
   AccordionBody,
 } from "@material-tailwind/react";
-import { linkedin } from "../assets";
+import { expand_more } from "../assets";
 
 function Icon({ id, open }) {
   return (
-    <img src={linkedin} alt="" />
+    <img src={expand_more} alt="p-2 rounded bg-[#096D6D]" />
   );
 }
 
@@ -21,8 +21,8 @@ const ValueAbout = () => {
   };
   return (
     <div className=" bg-aboutUs bg-[#006774] relative   bg-center bg-cover bg-no-repeat pb-[120px]">
-      <div className="md:px-[108px] px-4  m-auto">
-        <div className="flex  justify-between items-center">
+      <div className="md:px-[108px] p-4  m-auto">
+        <div className="flex  justify-between items-center text-white gap-4 py-4">
           <div>Learning Resources</div>
           <div>
             Bezi differentiates itself from other traditional accelerator
@@ -37,7 +37,7 @@ const ValueAbout = () => {
           >
              Mentorships
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-xs">
             We&apos;re not always in the position that we want to be at.
             We&apos;re constantly growing. We&apos;re constantly making
             mistakes. We&apos;re constantly trying to express ourselves and
@@ -51,7 +51,7 @@ const ValueAbout = () => {
           >
             Community forum
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-xs">
             We&apos;re not always in the position that we want to be at.
             We&apos;re constantly growing. We&apos;re constantly making
             mistakes. We&apos;re constantly trying to express ourselves and
@@ -65,7 +65,7 @@ const ValueAbout = () => {
           >
             Funding
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-xs">
             We&apos;re not always in the position that we want to be at.
             We&apos;re constantly growing. We&apos;re constantly making
             mistakes. We&apos;re constantly trying to express ourselves and
@@ -79,7 +79,7 @@ const ValueAbout = () => {
           >
             Networking
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-xs">
             We&apos;re not always in the position that we want to be at.
             We&apos;re constantly growing. We&apos;re constantly making
             mistakes. We&apos;re constantly trying to express ourselves and
@@ -93,7 +93,7 @@ const ValueAbout = () => {
           >
             Special discounts and offers
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-xs">
             We&apos;re not always in the position that we want to be at.
             We&apos;re constantly growing. We&apos;re constantly making
             mistakes. We&apos;re constantly trying to express ourselves and
@@ -108,7 +108,7 @@ const ValueAbout = () => {
             Are there any specific countries that the fellowship program focuses
             on?
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-xs">
             We&apos;re not always in the position that we want to be at.
             We&apos;re constantly growing. We&apos;re constantly making
             mistakes. We&apos;re constantly trying to express ourselves and
@@ -122,7 +122,7 @@ const ValueAbout = () => {
           >
             How can I become a mentor for the program?
           </AccordionHeader>
-          <AccordionBody>
+          <AccordionBody className="text-xs">
             We&apos;re not always in the position that we want to be at.
             We&apos;re constantly growing. We&apos;re constantly making
             mistakes. We&apos;re constantly trying to express ourselves and

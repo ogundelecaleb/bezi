@@ -1,3 +1,4 @@
+
 import {Team1,Team2,Team3} from "../assets"
 
 
@@ -33,4 +34,4 @@ export const teams = [
         Image:Team1,
     }
 
-]
+];
